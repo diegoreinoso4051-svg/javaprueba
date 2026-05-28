@@ -3,12 +3,15 @@
  */
 package com.example.practica2805;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
         hola_mundo();
         hola();
+        multiplicar_numeros();
     }
     public static void hola_mundo(){
         System.out.println("hola mundo cruel");
@@ -16,6 +19,24 @@ public class App {
     
     public static void hola(){
         System.out.println("hoolaaa");
+    }
+    
+    public static void multiplicar_numeros(){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Ingrese el numero para sacar la tabla de multiplicafr");
+        
+        double multi = 0;
+        
+        double numero = sc.nextDouble();
+        for (int i = 1; i <= 10; i++) {
+            
+            multi = i*numero;
+            
+            System.out.println("el numero "+ i + "multiplicado por "+ numero + "es igual a "+ multi);
+            
+        }
+        
     }
     
     
