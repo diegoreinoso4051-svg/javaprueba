@@ -8,9 +8,14 @@ public class App {
 
     public static void main(String[] args) {
         hola_mundo();
+        hola();
     }
     public static void hola_mundo(){
-        System.out.println("hola mundo");
+        System.out.println("hola mundo cruel");
+    }
+    
+    public static void hola(){
+        System.out.println("hoolaaa");
     }
     
     
